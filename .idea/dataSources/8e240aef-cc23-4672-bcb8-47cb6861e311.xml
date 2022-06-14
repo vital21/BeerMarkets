@@ -86,7 +86,7 @@
 |root||root|localhost|grant option|G
 performance_schema|schema||mysql.session|localhost|SELECT|G
 sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
-      <ServerVersion>8.0.28</ServerVersion>
+      <ServerVersion>8.0.29</ServerVersion>
     </root>
     <collation id="2" parent="1" name="armscii8_bin">
       <Charset>armscii8</Charset>
@@ -635,89 +635,89 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Charset>utf32</Charset>
     </collation>
     <collation id="171" parent="1" name="utf8_bin">
-      <Charset>utf8</Charset>
+      <Charset>utf8mb3</Charset>
     </collation>
     <collation id="172" parent="1" name="utf8_croatian_ci">
-      <Charset>utf8</Charset>
+      <Charset>utf8mb3</Charset>
     </collation>
     <collation id="173" parent="1" name="utf8_czech_ci">
-      <Charset>utf8</Charset>
+      <Charset>utf8mb3</Charset>
     </collation>
     <collation id="174" parent="1" name="utf8_danish_ci">
-      <Charset>utf8</Charset>
+      <Charset>utf8mb3</Charset>
     </collation>
     <collation id="175" parent="1" name="utf8_esperanto_ci">
-      <Charset>utf8</Charset>
+      <Charset>utf8mb3</Charset>
     </collation>
     <collation id="176" parent="1" name="utf8_estonian_ci">
-      <Charset>utf8</Charset>
+      <Charset>utf8mb3</Charset>
     </collation>
     <collation id="177" parent="1" name="utf8_general_ci">
-      <Charset>utf8</Charset>
+      <Charset>utf8mb3</Charset>
       <DefaultForCharset>1</DefaultForCharset>
     </collation>
     <collation id="178" parent="1" name="utf8_general_mysql500_ci">
-      <Charset>utf8</Charset>
+      <Charset>utf8mb3</Charset>
     </collation>
     <collation id="179" parent="1" name="utf8_german2_ci">
-      <Charset>utf8</Charset>
+      <Charset>utf8mb3</Charset>
     </collation>
     <collation id="180" parent="1" name="utf8_hungarian_ci">
-      <Charset>utf8</Charset>
+      <Charset>utf8mb3</Charset>
     </collation>
     <collation id="181" parent="1" name="utf8_icelandic_ci">
-      <Charset>utf8</Charset>
+      <Charset>utf8mb3</Charset>
     </collation>
     <collation id="182" parent="1" name="utf8_latvian_ci">
-      <Charset>utf8</Charset>
+      <Charset>utf8mb3</Charset>
     </collation>
     <collation id="183" parent="1" name="utf8_lithuanian_ci">
-      <Charset>utf8</Charset>
+      <Charset>utf8mb3</Charset>
     </collation>
     <collation id="184" parent="1" name="utf8_persian_ci">
-      <Charset>utf8</Charset>
+      <Charset>utf8mb3</Charset>
     </collation>
     <collation id="185" parent="1" name="utf8_polish_ci">
-      <Charset>utf8</Charset>
+      <Charset>utf8mb3</Charset>
     </collation>
     <collation id="186" parent="1" name="utf8_roman_ci">
-      <Charset>utf8</Charset>
+      <Charset>utf8mb3</Charset>
     </collation>
     <collation id="187" parent="1" name="utf8_romanian_ci">
-      <Charset>utf8</Charset>
+      <Charset>utf8mb3</Charset>
     </collation>
     <collation id="188" parent="1" name="utf8_sinhala_ci">
-      <Charset>utf8</Charset>
+      <Charset>utf8mb3</Charset>
     </collation>
     <collation id="189" parent="1" name="utf8_slovak_ci">
-      <Charset>utf8</Charset>
+      <Charset>utf8mb3</Charset>
     </collation>
     <collation id="190" parent="1" name="utf8_slovenian_ci">
-      <Charset>utf8</Charset>
+      <Charset>utf8mb3</Charset>
     </collation>
     <collation id="191" parent="1" name="utf8_spanish2_ci">
-      <Charset>utf8</Charset>
+      <Charset>utf8mb3</Charset>
     </collation>
     <collation id="192" parent="1" name="utf8_spanish_ci">
-      <Charset>utf8</Charset>
+      <Charset>utf8mb3</Charset>
     </collation>
     <collation id="193" parent="1" name="utf8_swedish_ci">
-      <Charset>utf8</Charset>
+      <Charset>utf8mb3</Charset>
     </collation>
     <collation id="194" parent="1" name="utf8_tolower_ci">
-      <Charset>utf8</Charset>
+      <Charset>utf8mb3</Charset>
     </collation>
     <collation id="195" parent="1" name="utf8_turkish_ci">
-      <Charset>utf8</Charset>
+      <Charset>utf8mb3</Charset>
     </collation>
     <collation id="196" parent="1" name="utf8_unicode_520_ci">
-      <Charset>utf8</Charset>
+      <Charset>utf8mb3</Charset>
     </collation>
     <collation id="197" parent="1" name="utf8_unicode_ci">
-      <Charset>utf8</Charset>
+      <Charset>utf8mb3</Charset>
     </collation>
     <collation id="198" parent="1" name="utf8_vietnamese_ci">
-      <Charset>utf8</Charset>
+      <Charset>utf8mb3</Charset>
     </collation>
     <collation id="199" parent="1" name="utf8mb4_0900_ai_ci">
       <Charset>utf8mb4</Charset>
@@ -992,91 +992,141 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <table id="287" parent="281" name="roles">
+    <table id="287" parent="281" name="beer">
       <Engine>InnoDB</Engine>
       <CollationName>utf8_general_ci</CollationName>
     </table>
-    <table id="288" parent="281" name="user_roles">
+    <table id="288" parent="281" name="roles">
       <Engine>InnoDB</Engine>
       <CollationName>utf8_general_ci</CollationName>
     </table>
-    <table id="289" parent="281" name="users">
+    <table id="289" parent="281" name="user_roles">
       <Engine>InnoDB</Engine>
       <CollationName>utf8_general_ci</CollationName>
     </table>
-    <column id="290" parent="287" name="id">
+    <table id="290" parent="281" name="users">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <column id="291" parent="287" name="id">
       <AutoIncrement>2</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="291" parent="287" name="name">
+    <column id="292" parent="287" name="nameBeer">
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <key id="292" parent="287" name="PRIMARY">
+    <column id="293" parent="287" name="container_type">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="294" parent="287" name="volume_container_beer">
+      <DataType>float|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="295" parent="287" name="type_beer">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="296" parent="287" name="percentage_of_alcohol_beer">
+      <DataType>float|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="297" parent="287" name="bitterness_of_beer">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+    </column>
+    <column id="298" parent="287" name="quantity_of_beer">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+    </column>
+    <key id="299" parent="287" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="293" parent="288" name="user_id">
+    <column id="300" parent="288" name="id">
+      <AutoIncrement>3</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="294" parent="288" name="role_id">
+    <column id="301" parent="288" name="name">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <key id="302" parent="288" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="303" parent="289" name="user_id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="304" parent="289" name="role_id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <foreign-key id="295" parent="288" name="user_roles_ibfk_1">
+    <foreign-key id="305" parent="289" name="user_roles_ibfk_1">
       <ColNames>user_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>users</RefTableName>
     </foreign-key>
-    <foreign-key id="296" parent="288" name="user_roles_ibfk_2">
+    <foreign-key id="306" parent="289" name="user_roles_ibfk_2">
       <ColNames>role_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>roles</RefTableName>
     </foreign-key>
-    <index id="297" parent="288" name="user_id">
+    <index id="307" parent="289" name="user_id">
       <ColNames>user_id
 role_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="298" parent="288" name="role_id">
+    <index id="308" parent="289" name="role_id">
       <ColNames>role_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="299" parent="288" name="user_id">
+    <key id="309" parent="289" name="user_id">
       <ColNames>user_id
 role_id</ColNames>
       <UnderlyingIndexName>user_id</UnderlyingIndexName>
     </key>
-    <column id="300" parent="289" name="id">
-      <AutoIncrement>1</AutoIncrement>
+    <column id="310" parent="290" name="id">
+      <AutoIncrement>3</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="301" parent="289" name="username">
+    <column id="311" parent="290" name="username">
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="302" parent="289" name="password">
+    <column id="312" parent="290" name="password">
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="303" parent="289" name="gmail">
+    <column id="313" parent="290" name="gmail">
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <key id="304" parent="289" name="PRIMARY">
+    <key id="314" parent="290" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
