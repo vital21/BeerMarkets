@@ -9,17 +9,19 @@
 <html>
 <head>
     <title>Title</title>
+  <meta charset="utf-8" />
 </head>
 <body>
 <div class="form">
-  <h1>Вход</h1><br>
+  <h1>input</h1><br>
   <form method="get" action="Servlet">
     <input type="text" required placeholder="login" name="login"><br>
     <input type="email" required placeholder="email" name="email"><br>
     <input type="password" required placeholder="password" name="password"><br><br>
-    <input class="button" type="submit" value="войти">
-    <input class="button" type="submit" value="регестрация">
+    <input class="button" type="submit" name="command" value="registration_user_command">
   </form>
+
 </div>
+
 </body>
 </html>

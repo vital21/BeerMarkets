@@ -27,6 +27,21 @@
         <servlet-name>adminMenu</servlet-name>
         <url-pattern>/adminMenu</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>registration</servlet-name>
+        <jsp-file>/WEB-INF/view/registration.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registration</servlet-name>
+        <url-pattern>/registration</url-pattern>
+    </servlet-mapping>
+    <!-- Encoding for jsp-pages to UTF-8 -->
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <page-encoding>UTF-8</page-encoding>
+        </jsp-property-group>
+    </jsp-config>
 
 
 </web-app>

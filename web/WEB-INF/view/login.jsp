@@ -9,15 +9,16 @@
 <html>
 <head>
     <title>login</title>
+    <meta charset="utf-8" />
 </head>
 <body>
         <div class="form">
             <h1>Вход</h1><br>
             <form method="get" action="Servlet">
-                <input type="text" required placeholder="login" name="login"><br>
-                <input type="password" required placeholder="password" name="password"><br><br>
-                <input  type="submit" value="войти">
-                <input  type="submit" value="регестрация">
+                <input type="text"  placeholder="login" name="login"><br>
+                <input type="password"  placeholder="password" name="password"><br><br>
+                <input  type="submit" name="command" value="insert_page">
+                <input  type="submit" name="command" value="registration_command">
             </form>
         </div>
 </body>

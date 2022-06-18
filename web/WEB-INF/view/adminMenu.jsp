@@ -9,15 +9,13 @@
 <html>
 <head>
     <title>Title</title>
+    <meta charset="utf-8" />
 </head>
 <body>
 <h1>Hello admin</h1>
-<a href="/logout">Logout</a>
-<form method="get" action="DispatcherServlet">
-    <input type="text" required placeholder="login" name="login"><br>
-    <input type="password" required placeholder="password" name="password"><br><br>
-    <input  type="submit" value="войти">
-    <input  type="submit" value="регестрация">
+<form method="get">
+    <input type="submit" value="insert_beer_in_db">
 </form>
+
 </body>
 </html>

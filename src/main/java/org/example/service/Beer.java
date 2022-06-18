@@ -9,10 +9,12 @@ public class Beer {
     private int bitternessOfBeer;
     private int  quantityOfBeer;
 
+
+
     Beer(){
 
     };
-    Beer(String nameBeer, String containerType, double volumeContainerBeer,String typeBeer, double percentageOfAlcoholBeer, int bitternessOfBeer,int quantityOfBeer){
+    public Beer(String nameBeer, String containerType, double volumeContainerBeer, String typeBeer, double percentageOfAlcoholBeer, int bitternessOfBeer, int quantityOfBeer){
         setNameBeer(nameBeer);
         setContainerType(containerType);
         setVolumeContainerBeer(volumeContainerBeer);
@@ -21,6 +23,15 @@ public class Beer {
         setBitternessOfBeer(bitternessOfBeer);
         setQuantityOfBeer(quantityOfBeer);
     }
+
+    public String getContainerType() {
+        return containerType;
+    }
+
+    public void setContainerType(String containerType) {
+        this.containerType = containerType;
+    }
+
     public int getQuantityOfBeer() {
         return quantityOfBeer;
     }
@@ -35,14 +46,6 @@ public class Beer {
 
     public void setNameBeer(String nameBeer) {
         this.nameBeer = nameBeer;
-    }
-
-    public String getContainerType() {
-        return containerType;
-    }
-
-    public void setContainerType(String containerType) {
-        this.containerType = containerType;
     }
 
     public double getVolumeContainerBeer() {
@@ -76,4 +79,5 @@ public class Beer {
     public void setBitternessOfBeer(int bitternessOfBeer) {
         this.bitternessOfBeer = bitternessOfBeer;
     }
+
 }

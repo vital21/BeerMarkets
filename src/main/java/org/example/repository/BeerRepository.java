@@ -28,5 +28,19 @@ public class BeerRepository {
             sqlException.printStackTrace();
         }
     }
+    public void registrationUserDataBase(String login,String password,String email){
+        String token="asd";
+        //String qqq="INSERT INTO users VALUES (3,'vitaliy','228','vitaliysaydak2001@gmail.com','asdfasdf');";
+        try (Connection connection = DriverManager.getConnection(url, user, this.password);
+             Statement statement = connection.createStatement())
+        {
+            int query = statement.executeUpdate("INSERT users (username,password,gmail,token) VALUES ('sdfg','sdfg','sdfsg','dfgsdfg');");
+
+             //   statement.executeUpdate(qqq);
+
+        } catch (SQLException sqlException) {
+            sqlException.printStackTrace();
+        }
+    }
 
 }
