@@ -1,4 +1,4 @@
-package org.example.repository;
+package org.example.service;
 
 public class User {
     private int id;

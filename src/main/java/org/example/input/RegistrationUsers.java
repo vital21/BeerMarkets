@@ -1,6 +1,6 @@
 package org.example.input;
 
-import org.example.repository.User;
+import org.example.service.User;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -47,6 +47,6 @@ public class RegistrationUsers {
     public void dataBaseRegistrationUser() throws ClassNotFoundException {
 
         DataBaseConnect dataBaseConnect=new DataBaseConnect();
-        dataBaseConnect.registrationUserDataBase(user.getLogin(),user.getPassword(),user.getEmail());
+        dataBaseConnect. registrationUserDataBase(user.getLogin(),user.getPassword(),user.getEmail());
     }
 }

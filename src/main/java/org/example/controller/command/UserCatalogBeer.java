@@ -6,10 +6,9 @@ import org.example.controller.PagePath;
 import org.example.service.Beer;
 
 import javax.servlet.http.HttpServletRequest;
-import java.io.IOException;
 import java.util.ArrayList;
 
-public class ViewProductsCommand implements CustomCommand {
+public class UserCatalogBeer implements CustomCommand {
     @Override
     public String executeCommand(HttpServletRequest request) throws ClassNotFoundException {
         String page;
@@ -17,7 +16,7 @@ public class ViewProductsCommand implements CustomCommand {
         ArrayList<Beer> products = null;
         products = product.select();
         request.setAttribute("products",products);
-        page= PagePath.VIEW_BEER;
+        page= PagePath.USER_CATALOG_BEER;
         return page;
     }
 }

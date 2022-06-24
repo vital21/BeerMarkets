@@ -9,42 +9,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7ccd879-5b90-4261-95f0-1949c6a5a7fc" name="Changes" comment="Update project:&#10;Добавление сервлета, реализация Front controller pattern &#10;Окна регестрации">
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DataBase/DataBaseConnect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DataBase/ProductDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DataBase/ProductDataBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/CommandProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/CommandType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/CustomCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/PagePath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/RequestParameter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/InsertBeerInDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/InsertPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/LoginCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/RegistrationCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/RegistrationUserCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/ViewProductsCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/input/DataBaseConnect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/input/RegistrationUsers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/view/beerCatalog.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/view/insertBeer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/BeerMarkets_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/BeerMarkets_war_exploded.xml" afterDir="false" />
+    <list default="true" id="e7ccd879-5b90-4261-95f0-1949c6a5a7fc" name="Changes" comment="Update project:&#10;Добавлена работа с базой данных, можно добавить в бд новое пиво и посмотреть весь список">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/AddBeerToBuy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/AddBeerToBuyPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/BuyProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/BuyProductCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/EditBeer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/EditPageBeer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/UserCatalogBeer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/ViewPageBeer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/ProductBuy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/view/addBeerToBuyPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/view/editBeer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/view/productCart.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/view/userCatalog.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/view/viewBeer.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/8e240aef-cc23-4672-bcb8-47cb6861e311.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8e240aef-cc23-4672-bcb8-47cb6861e311.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BeerMarkets_war_exploded/WEB-INF/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BeerMarkets_war_exploded/WEB-INF/classes/org/example/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BeerMarkets_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BeerMarkets_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/trash/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/trash/DispatcherServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DataBase/DataBaseConnect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DataBase/ProductDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DataBase/ProductDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DataBase/ProductDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DataBase/ProductDataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/CommandType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/CommandType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/PagePath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/PagePath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/Servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/Servlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/trash/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/BeerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/BeerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/command/InsertBeerInDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/InsertBeerInDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/command/InsertPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/InsertPageBeer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/command/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/LoginCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/command/ViewProductsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/ViewProductsCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/trash/AdminController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/trash/DispatcherServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/trash/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/input/RegistrationUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/input/RegistrationUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/Beer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/Beer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/repository/dataBaseUsersRepository.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/repository/dataBaseUsersRepository.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/adminMenu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/adminMenu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/beerCatalog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/beerCatalog.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/insertBeer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/insertBeer.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/registration.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/userMenu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/userMenu.jsp" afterDir="false" />
@@ -84,28 +86,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Program Files (x86)/MySQL/Connector J 8.0/mysql-connector-java-8.0.29.jar",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Program Files (x86)/MySQL/Connector J 8.0/mysql-connector-java-8.0.29.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ],
-    "RunConfigurationTargetLRU": [
-      "8e240aef-cc23-4672-bcb8-47cb6861e311/schema/\"test_code_1\"",
-      "8e240aef-cc23-4672-bcb8-47cb6861e311"
+    &quot;RunConfigurationTargetLRU&quot;: [
+      &quot;8e240aef-cc23-4672-bcb8-47cb6861e311/schema/\&quot;test_code_1\&quot;&quot;,
+      &quot;8e240aef-cc23-4672-bcb8-47cb6861e311&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\vital\IdeaProjects\BeerMarkets\src\main\resources" />
@@ -354,11 +356,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Tomcat Server.index.jsp (3)" />
         <item itemvalue="Database Script.dataBaseUsersRepository.sql" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Tomcat Server.index.jsp (4)" />
         <item itemvalue="Tomcat Server.index.jsp" />
-        <item itemvalue="Tomcat Server.index.jsp (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -380,7 +382,14 @@
       <workItem from="1655449308998" duration="3001000" />
       <workItem from="1655458809903" duration="3000" />
       <workItem from="1655463469579" duration="12174000" />
-      <workItem from="1655546446002" duration="17730000" />
+      <workItem from="1655546446002" duration="19394000" />
+      <workItem from="1655631215853" duration="6414000" />
+      <workItem from="1655643386255" duration="5410000" />
+      <workItem from="1655744026607" duration="6641000" />
+      <workItem from="1655803298628" duration="18891000" />
+      <workItem from="1655913718798" duration="10219000" />
+      <workItem from="1655998749719" duration="8477000" />
+      <workItem from="1656087158611" duration="6431000" />
     </task>
     <task id="LOCAL-00001" summary="Update project:&#10;Добавление сервлета, реализация Front controller pattern &#10;Окна регестрации">
       <created>1655210218761</created>
@@ -389,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655210218761</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update project:&#10;Добавлена работа с базой данных, можно добавить в бд новое пиво и посмотреть весь список">
+      <created>1655579131422</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655579131422</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,7 +424,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update project:&#10;Добавление сервлета, реализация Front controller pattern &#10;Окна регестрации" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update project:&#10;Добавление сервлета, реализация Front controller pattern &#10;Окна регестрации" />
+    <MESSAGE value="Update project:&#10;Добавлена работа с базой данных, можно добавить в бд новое пиво и посмотреть весь список" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update project:&#10;Добавлена работа с базой данных, можно добавить в бд новое пиво и посмотреть весь список" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -419,16 +436,17 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/controller/Servlet.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/controller/command/InsertBeerInDB.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="18" />
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/controller/command/BuyProduct.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="this.attributes" custom="javax.servlet.http.HttpSession" />
+        <watch expression="((java.util.concurrent.ConcurrentHashMap.MapEntry)((java.util.concurrent.ConcurrentHashMap)this.attributes).entrySet().toArray()[11]).getValue()" custom="java.util.concurrent.ConcurrentHashMap,java.util.concurrent.ConcurrentHashMap.MapEntry,javax.servlet.ServletContext" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

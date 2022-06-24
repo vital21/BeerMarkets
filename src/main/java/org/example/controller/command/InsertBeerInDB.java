@@ -20,7 +20,7 @@ public class InsertBeerInDB implements CustomCommand {
         int quantityOfBeer= Integer.parseInt(request.getParameter("quantityOfBeer"));
         ProductDB product=new ProductDB();
         product.insert(nameBeer, containerType,volumeContainerBeer,typeBeer,percentageOfAlcoholBeer,bitternessOfBeer,quantityOfBeer);
-        page= PagePath.BEER_CATALOG;
+        page= PagePath.INSERT_BEER;
         return page;
     }
 }

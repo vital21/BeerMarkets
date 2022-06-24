@@ -1,6 +1,7 @@
 package org.example.service;
 
 public class Beer {
+    private int id;
     private String nameBeer;
     private String containerType;
     private double volumeContainerBeer;
@@ -14,7 +15,8 @@ public class Beer {
     Beer(){
 
     };
-    public Beer(String nameBeer, String containerType, double volumeContainerBeer, String typeBeer, double percentageOfAlcoholBeer, int bitternessOfBeer, int quantityOfBeer){
+    public Beer( int id,String nameBeer, String containerType, double volumeContainerBeer, String typeBeer, double percentageOfAlcoholBeer, int bitternessOfBeer, int quantityOfBeer){
+        setId(id);
         setNameBeer(nameBeer);
         setContainerType(containerType);
         setVolumeContainerBeer(volumeContainerBeer);
@@ -22,6 +24,14 @@ public class Beer {
         setPercentageOfAlcoholBeer(percentageOfAlcoholBeer);
         setBitternessOfBeer(bitternessOfBeer);
         setQuantityOfBeer(quantityOfBeer);
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getContainerType() {

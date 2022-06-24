@@ -11,6 +11,7 @@
     <title>Title</title>
   <meta charset="utf-8" />
 </head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <body>
 <div class="form">
   <h1>input</h1><br>
@@ -18,7 +19,7 @@
     <input type="text" required placeholder="login" name="login"><br>
     <input type="email" required placeholder="email" name="email"><br>
     <input type="password" required placeholder="password" name="password"><br><br>
-    <input class="button" type="submit" name="command" value="registration_user_command">
+    <input class="button" type="submit" name="command" value="registration_user_command"class="btn btn-success">
   </form>
 
 </div>

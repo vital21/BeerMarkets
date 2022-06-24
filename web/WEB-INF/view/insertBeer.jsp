@@ -34,6 +34,7 @@
     <title>Insert beer</title>
 </head>
 <body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <h1>New beer</h1>
     <form method="post" action="Servlet">
         <label>Name beer</label><br>
@@ -58,8 +59,8 @@
         <input type="number" name="bitternessOfBeer"><br>
         <label>Quantity</label><br>
         <input type="number" name="quantityOfBeer"><br>
-        <input type="submit" name="command" value="insert_beer_in_db">
-        <input type="submit" name="command" value="view_products_command">
+        <input type="submit" name="command" value="insert_beer_in_db" class="btn btn-success">
+        <input type="submit" name="command" value="view_products_command" class="btn btn-success">
     </form>
 </body>
 </html>

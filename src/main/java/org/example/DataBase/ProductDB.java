@@ -20,6 +20,9 @@ public class ProductDB implements ProductDataBase{
 
     private static final String SELECT_ALL_BEER="SELECT * FROM beer";
     private static final String INSERT_BEER="INSERT INTO beer (nameBeer,container_type,volume_container_beer,type_beer,percentage_of_alcohol_beer,bitterness_of_beer,quantity_of_beer) VALUES(?,?,?,?,?,?,?)";
+
+    private static final String EDIT_BEER="UPDATE beer SET volume_container_beer=?, quantity_of_beer =? WHERE id = ?";
+    private static final String SELECT_BEER_BY_ID="SELECT * FROM beer WHERE id=?";
     @Override
     public ArrayList<Beer> select() throws ClassNotFoundException {
         ArrayList<Beer> products = new ArrayList<Beer>();
@@ -31,6 +34,7 @@ public class ProductDB implements ProductDataBase{
         {
             Class.forName("com.mysql.jdbc.Driver");
             while (resultSet.next()){
+                int id=resultSet.getInt(1);
                  String nameBeer=resultSet.getString(2);
                 String containerType= resultSet.getString(3);
                  double volumeContainerBeer =resultSet.getDouble(4);
@@ -38,7 +42,7 @@ public class ProductDB implements ProductDataBase{
                  double percentageOfAlcoholBeer=resultSet.getDouble(6);;
                  int bitternessOfBeer=resultSet.getInt(7);
                  int  quantityOfBeer=resultSet.getInt(8);
-                 Beer product = new Beer(nameBeer,containerType,volumeContainerBeer,typeBeer,percentageOfAlcoholBeer,bitternessOfBeer,quantityOfBeer);
+                 Beer product = new Beer(id,nameBeer,containerType,volumeContainerBeer,typeBeer,percentageOfAlcoholBeer,bitternessOfBeer,quantityOfBeer);
                  products.add(product);
             }
 
@@ -46,6 +50,48 @@ public class ProductDB implements ProductDataBase{
             throw new RuntimeException(e);
         }
         return products;
+    }
+    @Override
+    public Beer selectById(int id) {
+        Beer product=null;
+        try(Connection connection = DriverManager.getConnection(RequestParameter.URL_DB, RequestParameter.USER_DB, RequestParameter.PASSWORD_DB);
+            PreparedStatement preparedStatement = connection.prepareStatement(SELECT_BEER_BY_ID)){
+            Class.forName("com.mysql.jdbc.Driver");
+            preparedStatement.setInt(1,id);
+            ResultSet resultSet=preparedStatement.executeQuery();
+            if(resultSet.next()){
+                int id2=resultSet.getInt(1);
+                String nameBeer=resultSet.getString(2);
+                String containerType= resultSet.getString(3);
+                double volumeContainerBeer =resultSet.getDouble(4);
+                String typeBeer=resultSet.getString(5);;
+                double percentageOfAlcoholBeer=resultSet.getDouble(6);;
+                int bitternessOfBeer=resultSet.getInt(7);
+                int  quantityOfBeer=resultSet.getInt(8);
+                product = new Beer(id2,nameBeer,containerType,volumeContainerBeer,typeBeer,percentageOfAlcoholBeer,bitternessOfBeer,quantityOfBeer);
+
+            }
+
+
+        } catch (SQLException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        return product;
+    }
+    @Override
+    public int edit(int id, double volumeContainerBeer, int quantityOfBeer) {
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            try(Connection connection=DriverManager.getConnection(RequestParameter.URL_DB,RequestParameter.USER_DB,RequestParameter.PASSWORD_DB);
+            PreparedStatement preparedStatement=connection.prepareStatement(EDIT_BEER)){
+                preparedStatement.setDouble(1,volumeContainerBeer);
+                preparedStatement.setInt(2,quantityOfBeer);
+                preparedStatement.setInt(3,id);
+                return preparedStatement.executeUpdate();
+            }
+        } catch (ClassNotFoundException | SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
@@ -67,14 +113,13 @@ public class ProductDB implements ProductDataBase{
             throw new RuntimeException(e);
         }
     }
-    @Override
-    public Beer selectById() {
-        return null;
-    }
+
 
 
     @Override
     public void deleteById() {
 
     }
+
+
 }

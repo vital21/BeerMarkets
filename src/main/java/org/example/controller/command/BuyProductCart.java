@@ -5,11 +5,12 @@ import org.example.controller.PagePath;
 
 import javax.servlet.http.HttpServletRequest;
 
-public class InsertPage implements CustomCommand {
+public class BuyProductCart implements CustomCommand {
     @Override
     public String executeCommand(HttpServletRequest request) throws ClassNotFoundException {
         String page;
-        page= PagePath.INSERT_BEER;
-        return page;
+
+        page = PagePath.PRODUCT_CART;
+        return null;
     }
 }
