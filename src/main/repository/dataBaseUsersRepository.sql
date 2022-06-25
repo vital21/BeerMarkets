@@ -16,7 +16,7 @@ quantity INT NOT NULL ,
 date DATE not null,
 
 FOREIGN KEY (user_id) REFERENCES users(id),
-FOREIGN KEY (beer_id) REFERENCES beer(id),
-UNIQUE (user_id,beer_id)
+FOREIGN KEY (beer_id) REFERENCES beer(id)
 )
 ENGINE = InnoDB;
+INSERT INTO users (username, password, gmail, token) VALUES ('vital','1337','vital','adasd');

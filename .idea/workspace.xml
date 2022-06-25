@@ -9,48 +9,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7ccd879-5b90-4261-95f0-1949c6a5a7fc" name="Changes" comment="Update project:&#10;Добавлена работа с базой данных, можно добавить в бд новое пиво и посмотреть весь список">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/AddBeerToBuy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/AddBeerToBuyPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/BuyProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/BuyProductCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/EditBeer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/EditPageBeer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/UserCatalogBeer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/ViewPageBeer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/ProductBuy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/view/addBeerToBuyPage.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/view/editBeer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/view/productCart.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/view/userCatalog.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/view/viewBeer.jsp" afterDir="false" />
+    <list default="true" id="e7ccd879-5b90-4261-95f0-1949c6a5a7fc" name="Changes" comment="Update project:">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DataBase/UserBuyDataBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DataBase/UserBuyDb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DataBase/UserDataBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DataBase/UserDb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/UserBuy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/8e240aef-cc23-4672-bcb8-47cb6861e311.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8e240aef-cc23-4672-bcb8-47cb6861e311.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BeerMarkets_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BeerMarkets_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DataBase/DataBaseConnect.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DataBase/ProductDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DataBase/ProductDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DataBase/ProductDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DataBase/ProductDataBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/CommandType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/CommandType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/PagePath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/PagePath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/Servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/Servlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/command/InsertBeerInDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/InsertBeerInDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/command/InsertPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/InsertPageBeer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/command/BuyProductCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/BuyProductCart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/command/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/LoginCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/command/ViewProductsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/ViewProductsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/trash/AdminController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/trash/DispatcherServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/trash/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/input/RegistrationUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/input/RegistrationUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/Beer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/Beer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/repository/dataBaseUsersRepository.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/repository/dataBaseUsersRepository.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/adminMenu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/adminMenu.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/beerCatalog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/beerCatalog.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/insertBeer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/insertBeer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/registration.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/userMenu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/userMenu.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,9 +33,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Jsp File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -356,8 +328,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Tomcat Server.index.jsp (3)" />
         <item itemvalue="Database Script.dataBaseUsersRepository.sql" />
+        <item itemvalue="Tomcat Server.index.jsp (3)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Tomcat Server.index.jsp (4)" />
         <item itemvalue="Tomcat Server.index.jsp" />
@@ -389,7 +361,8 @@
       <workItem from="1655803298628" duration="18891000" />
       <workItem from="1655913718798" duration="10219000" />
       <workItem from="1655998749719" duration="8477000" />
-      <workItem from="1656087158611" duration="6431000" />
+      <workItem from="1656087158611" duration="11839000" />
+      <workItem from="1656150132044" duration="11548000" />
     </task>
     <task id="LOCAL-00001" summary="Update project:&#10;Добавление сервлета, реализация Front controller pattern &#10;Окна регестрации">
       <created>1655210218761</created>
@@ -405,7 +378,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655579131422</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update project:">
+      <created>1656100539684</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656100539684</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -425,7 +405,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update project:&#10;Добавление сервлета, реализация Front controller pattern &#10;Окна регестрации" />
     <MESSAGE value="Update project:&#10;Добавлена работа с базой данных, можно добавить в бд новое пиво и посмотреть весь список" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update project:&#10;Добавлена работа с базой данных, можно добавить в бд новое пиво и посмотреть весь список" />
+    <MESSAGE value="Update project:" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update project:" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -436,9 +417,29 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/controller/command/BuyProduct.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/controller/command/BuyProductCart.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/DataBase/UserBuyDb.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/DataBase/UserBuyDb.java</url>
           <line>16</line>
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/DataBase/UserBuyDb.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/controller/command/BuyProductCart.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -446,6 +447,7 @@
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
         <watch expression="this.attributes" custom="javax.servlet.http.HttpSession" />
         <watch expression="((java.util.concurrent.ConcurrentHashMap.MapEntry)((java.util.concurrent.ConcurrentHashMap)this.attributes).entrySet().toArray()[11]).getValue()" custom="java.util.concurrent.ConcurrentHashMap,java.util.concurrent.ConcurrentHashMap.MapEntry,javax.servlet.ServletContext" />
+        <watch expression="buyProducts" />
       </configuration>
     </watches-manager>
   </component>

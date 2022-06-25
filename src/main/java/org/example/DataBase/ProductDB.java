@@ -2,6 +2,7 @@ package org.example.DataBase;
 
 import org.example.controller.RequestParameter;
 import org.example.service.Beer;
+import org.example.service.ProductBuy;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -22,6 +23,8 @@ public class ProductDB implements ProductDataBase{
     private static final String INSERT_BEER="INSERT INTO beer (nameBeer,container_type,volume_container_beer,type_beer,percentage_of_alcohol_beer,bitterness_of_beer,quantity_of_beer) VALUES(?,?,?,?,?,?,?)";
 
     private static final String EDIT_BEER="UPDATE beer SET volume_container_beer=?, quantity_of_beer =? WHERE id = ?";
+    private static final String UPDATE_QUANTITY="UPDATE beer SET quantity_of_beer = ? WHERE id = ?";
+    private static final String SELECT_QUANTITY="SELECT quantity_of_beer FROM beer WHERE id=?";
     private static final String SELECT_BEER_BY_ID="SELECT * FROM beer WHERE id=?";
     @Override
     public ArrayList<Beer> select() throws ClassNotFoundException {
@@ -69,7 +72,6 @@ public class ProductDB implements ProductDataBase{
                 int bitternessOfBeer=resultSet.getInt(7);
                 int  quantityOfBeer=resultSet.getInt(8);
                 product = new Beer(id2,nameBeer,containerType,volumeContainerBeer,typeBeer,percentageOfAlcoholBeer,bitternessOfBeer,quantityOfBeer);
-
             }
 
 
@@ -94,6 +96,7 @@ public class ProductDB implements ProductDataBase{
         }
     }
 
+
     @Override
     public int insert(String nameBeer, String containerType, double volumeContainerBeer,String typeBeer,double percentageOfAlcoholBeer,int bitternessOfBeer,int quantityOfBeer) {
         try {
@@ -114,6 +117,38 @@ public class ProductDB implements ProductDataBase{
         }
     }
 
+    @Override
+    public void editQuantityBuy(ArrayList<ProductBuy> productBuy) {
+        try {
+            int size = productBuy.size();
+            int buf_quantity=0;
+            ProductBuy bufProductBuy;
+            Class.forName("com.mysql.jdbc.Driver");
+            try (Connection connection = DriverManager.getConnection(RequestParameter.URL_DB, RequestParameter.USER_DB, RequestParameter.PASSWORD_DB)) {
+                PreparedStatement preparedStatement = connection.prepareStatement(SELECT_QUANTITY);
+                for (int i = 0; i < size; i++) {
+                    int quantityOfBeer=productBuy.get(i).getQuantity();
+                    preparedStatement.setInt(1,productBuy.get(i).getId());
+                    ResultSet resultSet=preparedStatement.executeQuery();
+                    if(resultSet.next()){
+                        buf_quantity=resultSet.getInt(1);
+                        buf_quantity=buf_quantity-quantityOfBeer;
+                        bufProductBuy=new ProductBuy(productBuy.get(i).getId(),buf_quantity);
+                        productBuy.set(i,bufProductBuy);
+                    }
+                }
+                preparedStatement=connection.prepareStatement(UPDATE_QUANTITY);
+                for (int i = 0; i < size; i++) {
+                    preparedStatement.setInt(1,productBuy.get(i).getQuantity());
+                    preparedStatement.setInt(2,productBuy.get(i).getId());
+                    preparedStatement.executeUpdate();
+                }
+
+            }
+        } catch (ClassNotFoundException | SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
 
     @Override
