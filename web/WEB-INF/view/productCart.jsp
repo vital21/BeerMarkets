@@ -16,21 +16,25 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <table style="width: 70%">
 
-        <tr><th>Название</th><th>Тип тары</th><th>Обьем тары</th><th>Тип пива</th><th>Процент алкоголя</th><th>Горечь</th><th>Количество</th><th></th></tr>
-        <c:forEach var="product" items="${products}">
-            <tr><td STYLE="width: 15%">${product.nameBeer}</td>
+        <tr><th>Название</th><th>Тип тары</th><th>Обьем тары</th><th>Тип пива</th><th>Процент алкоголя</th><th>Горечь</th><th>Количество</th><th>Количество на заказ</th><th></th></tr>
+        <tr><c:forEach var="product" items="${products}"  varStatus="stepForEach">
+           <td STYLE="width: 15%">${product.nameBeer}</td>
                 <td STYLE="width: 15%">${product.containerType}</td>
                 <td STYLE="width: 10%">${product.volumeContainerBeer}</td>
                 <td STYLE="width: 15%">${product.typeBeer}</td>
                 <td STYLE="width: 10%">${product.percentageOfAlcoholBeer}</td>
                 <td STYLE="width: 10%">${product.bitternessOfBeer}</td>
                 <td STYLE="width: 10%">${product.quantityOfBeer}</td>
-                <td>
+            <c:forEach var="buyProduct" items="${buyProduct}" begin="${stepForEach.index}" end="${stepForEach.index}">
+        <td STYLE="width: 20%">${buyProduct.quantity}</td>
+        </c:forEach>
+        </tr>
                     <form method="get" action="Servlet">
                         <input type="hidden" name="productId" value="${product.id}">
                     </form>
-                </td></tr>
         </c:forEach>
+
+
 
     </table>
     <table>

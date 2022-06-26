@@ -16,6 +16,8 @@
 <form method="get" action="Servlet">
     <input type="submit" name="command" value="user_catalog_beer" class="btn btn-success">
     <input type="submit" name="command" value="buy_product" class="btn btn-success">
+    <input type="submit" name="command" value="shop_history" class="btn btn-success">
+
 </form>
 </body>
 </html>

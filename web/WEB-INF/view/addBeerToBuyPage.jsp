@@ -16,7 +16,7 @@
 <h1>Hello you ready for by</h1>
 <form method="get" action="Servlet">
 
-    <table STYLE="width: 100%">
+    <table STYLE="width: 70%">
 
         <tr><th>Название</th><th>Тип тары</th><th>Обьем тары</th><th>Тип пива</th><th>Процент алкоголя</th><th>Горечь</th><th>Количество</th><th></th></tr>
 

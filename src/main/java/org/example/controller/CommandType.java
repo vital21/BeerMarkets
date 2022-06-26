@@ -16,7 +16,10 @@ public enum CommandType {
     ADD_BEER_TO_BUY_PAGE(new AddBeerToBuyPage()),
     ADD_BEER_TO_BUY(new AddBeerToBuy()),
     BUY_PRODUCT(new BuyProduct()),
-    BUY_PRODUCT_CART(new BuyProductCart());
+    BUY_PRODUCT_CART(new BuyProductCart()),
+    USER_MENU_PAGE(new UserMenuPage()),
+    CLEAR_CART(new ClearCart()),
+    SHOP_HISTORY(new ShopHistory());
     private final CustomCommand command;
     CommandType(CustomCommand command) {
         this.command=command;

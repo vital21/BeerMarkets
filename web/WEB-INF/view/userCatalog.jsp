@@ -36,7 +36,7 @@
 
     </table>
     <input type="submit" name="command" value="buy_product" class="btn btn-success">
-    <input type="submit" name="command" value="" class="btn btn-success">
+    <input type="submit" name="command" value="user_menu_page" class="btn btn-success">
 </form>
 </body>
 </html>
