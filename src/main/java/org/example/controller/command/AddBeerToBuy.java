@@ -22,9 +22,10 @@ public class AddBeerToBuy implements CustomCommand {
         products=productDB.selectById(id);
         request.setAttribute("products",products);
         int quantity = Integer.parseInt(request.getParameter("quantity"));
+        //прооверка на кол-пива в базе
+        Beer beer =null;
         ContextArrayProduct(id,servletContext,quantity);
         page= PagePath.ADD_BEER_TO_BUY_PAGE;
-        //servletContext.removeAttribute("productsId");
         return page;
     }
     private void ContextArrayProduct(int id,ServletContext servletContext,int quantity){

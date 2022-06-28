@@ -9,17 +9,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7ccd879-5b90-4261-95f0-1949c6a5a7fc" name="Changes" comment="Update project:Buy products">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/ClearCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/ShopHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/view/ShopHistory.jsp" afterDir="false" />
+    <list default="true" id="e7ccd879-5b90-4261-95f0-1949c6a5a7fc" name="Changes" comment="Update project:">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/AdminMenuPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/LogoutCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/ShopHistoryAll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/UserMenuPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/view/shopHistoryAll.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8e240aef-cc23-4672-bcb8-47cb6861e311.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8e240aef-cc23-4672-bcb8-47cb6861e311.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DataBase/UserBuyDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DataBase/UserBuyDataBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DataBase/UserBuyDb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DataBase/UserBuyDb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DataBase/UserDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DataBase/UserDataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DataBase/UserDb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DataBase/UserDb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/CommandType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/CommandType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/addBeerToBuyPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/addBeerToBuyPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/productCart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/productCart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/userCatalog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/userCatalog.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/PagePath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/PagePath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/command/AddBeerToBuy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/AddBeerToBuy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/command/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/LoginCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/command/RegistrationCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/RegistrationCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/command/RegistrationUserCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/RegistrationUserCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/command/ShopHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/ShopHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/repository/dataBaseBeerRepository.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/repository/dataBaseBeerRepository.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/repository/dataBaseUsersRepository.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/repository/dataBaseUsersRepository.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/ShopHistory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/shopHistory.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/adminMenu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/adminMenu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/beerCatalog.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/editBeer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/editBeer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/insertBeer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/insertBeer.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/userMenu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/userMenu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/viewBeer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/viewBeer.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +50,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -101,6 +120,12 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="dataBaseBeerRepository.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/src/main/repository/dataBaseBeerRepository.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="8e240aef-cc23-4672-bcb8-47cb6861e311" />
+      <method v="2" />
     </configuration>
     <configuration name="dataBaseUsersRepository.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/src/main/repository/dataBaseUsersRepository.sql" />
@@ -276,60 +301,21 @@
         </option>
       </method>
     </configuration>
-    <configuration name="index.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.63" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.jsp" />
-      <deployment>
-        <artifact name="BeerMarkets:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/BeerMarkets_war_exploded" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="55dbf226-5d38-4e4e-aa0d-9d63a5ac48db" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="BeerMarkets:war exploded" />
-        </option>
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="Database Script.dataBaseBeerRepository.sql" />
       <item itemvalue="Database Script.dataBaseUsersRepository.sql" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.63" />
       <item itemvalue="Tomcat Server.index.jsp (3)" />
       <item itemvalue="Tomcat Server.index.jsp (4)" />
-      <item itemvalue="Tomcat Server.index.jsp" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Database Script.dataBaseUsersRepository.sql" />
+        <item itemvalue="Database Script.dataBaseBeerRepository.sql" />
         <item itemvalue="Tomcat Server.index.jsp (3)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Tomcat Server.index.jsp (4)" />
-        <item itemvalue="Tomcat Server.index.jsp" />
       </list>
     </recent_temporary>
   </component>
@@ -360,7 +346,10 @@
       <workItem from="1655998749719" duration="8477000" />
       <workItem from="1656087158611" duration="11839000" />
       <workItem from="1656150132044" duration="13887000" />
-      <workItem from="1656234853695" duration="5580000" />
+      <workItem from="1656234853695" duration="9543000" />
+      <workItem from="1656329933132" duration="15559000" />
+      <workItem from="1656401915669" duration="3033000" />
+      <workItem from="1656445414631" duration="2074000" />
     </task>
     <task id="LOCAL-00001" summary="Update project:&#10;Добавление сервлета, реализация Front controller pattern &#10;Окна регестрации">
       <created>1655210218761</created>
@@ -390,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656169599793</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update project:">
+      <created>1656240523972</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1656240523972</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,9 +406,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update project:&#10;Добавление сервлета, реализация Front controller pattern &#10;Окна регестрации" />
     <MESSAGE value="Update project:&#10;Добавлена работа с базой данных, можно добавить в бд новое пиво и посмотреть весь список" />
-    <MESSAGE value="Update project:" />
     <MESSAGE value="Update project:Buy products" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update project:Buy products" />
+    <MESSAGE value="Update project:" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update project:" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -424,32 +420,86 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/controller/command/ShopHistory.java</url>
-          <line>17</line>
+          <line>18</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/DataBase/UserBuyDb.java</url>
-          <line>35</line>
+          <line>38</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/DataBase/UserBuyDb.java</url>
-          <line>37</line>
+          <line>40</line>
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/DataBase/UserBuyDb.java</url>
-          <line>39</line>
+          <line>42</line>
           <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/controller/command/RegistrationCommand.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/DataBase/UserDb.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/DataBase/UserDb.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/DataBase/UserDb.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/controller/command/RegistrationUserCommand.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/controller/command/RegistrationUserCommand.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/controller/command/RegistrationUserCommand.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/controller/command/RegistrationUserCommand.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/controller/command/RegistrationUserCommand.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/DataBase/UserBuyDb.java</url>
-          <line>34</line>
-          <properties class="org.example.DataBase.UserBuyDb" method="selectUserBuy">
+          <line>37</line>
+          <properties class="org.example.DataBase.UserBuyDb" method="selectUserBuyById">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/controller/command/RegistrationUserCommand.java</url>
+          <line>26</line>
+          <properties class="org.example.controller.command.RegistrationUserCommand" method="generationToken">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="76" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

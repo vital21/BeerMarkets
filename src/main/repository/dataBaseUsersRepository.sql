@@ -19,4 +19,3 @@ FOREIGN KEY (user_id) REFERENCES users(id),
 FOREIGN KEY (beer_id) REFERENCES beer(id)
 )
 ENGINE = InnoDB;
-INSERT INTO users (username, password, gmail, token) VALUES ('vital','1337','vital','adasd');

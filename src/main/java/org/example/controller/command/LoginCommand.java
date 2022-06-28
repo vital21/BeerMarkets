@@ -11,21 +11,21 @@ import javax.servlet.http.HttpServletRequest;
 public class LoginCommand implements CustomCommand {
     @Override
     public String executeCommand(HttpServletRequest request) {
-        String page=null;
-
+        String page;
+        int idUser;
         String login=request.getParameter(RequestParameter.LOGIN);
         request.setAttribute("userName",login);
         String password=request.getParameter(RequestParameter.PASSWORD);
-        if (login.equals("vitaliy")){
+        UserDb userDb=new UserDb();
+        idUser=userDb.selectIdUserByName(login);
+        if (login.equals("vitaliy")&&idUser!=0){
 
             page= PagePath.ADMIN_MENU;
         }
-        if(!login.equals("vitaliy")&&login!=null ){
-            int idUser=0;
+        else{
             page=PagePath.USER_MENU;
             ServletContext servletContext= request.getServletContext();
             servletContext.setAttribute("buyProduct",null);
-            UserDb userDb=new UserDb();
             idUser=userDb.selectIdUserByName(login);
             servletContext.setAttribute("idUser",idUser);
         }

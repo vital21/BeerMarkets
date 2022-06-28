@@ -15,13 +15,18 @@ public class User {
     public User(){
 
     }
-    public User(int id,String login, String password, String email,String token,Status status) {
+    public User(String login, String password, String email,String token) {
+        this.login = login;
+        this.password = password;
+        this.email = email;
+        this.token=token;
+    }
+    public User(int id,String login, String password, String email,String token) {
         this.id=id;
         this.login = login;
         this.password = password;
         this.email = email;
         this.token=token;
-        this.status=Status.NOT_CONFIRM;
     }
 
     public Status getStatus() {

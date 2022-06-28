@@ -14,4 +14,6 @@ public class PagePath {
     public static final String USER_CATALOG_BEER="/WEB-INF/view/userCatalog.jsp";
     public static final String ADD_BEER_TO_BUY_PAGE="/WEB-INF/view/addBeerToBuyPage.jsp";
     public static final String PRODUCT_CART="/WEB-INF/view/productCart.jsp";
+    public static final String SHOP_HISTORY="/WEB-INF/view/shopHistory.jsp";
+    public static final String SHOP_HISTORY_ALL="/WEB-INF/view/shopHistoryAll.jsp";
 }

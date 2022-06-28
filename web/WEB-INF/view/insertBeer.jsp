@@ -35,29 +35,29 @@
 </head>
 <body>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-<h1>New beer</h1>
+<h1>Новое пиво</h1>
     <form method="post" action="Servlet">
-        <label>Name beer</label><br>
+        <label>Название пива</label><br>
         <input type="text" name="nameBeer"><br>
-        <label>Type container</label><br>
+        <label>Тип контейнера</label><br>
         <select name="containerType">
             <option>Бутылка</option>
             <option>Банка</option>
             <option>Разлив</option>
         </select><br>
-        <label>Volume</label><br>
+        <label>Обьем</label><br>
         <input type="number" step="any" name="volumeContainerBeer"><br>
-        <label>Type beer</label><br>
+        <label>Тип пива</label><br>
         <select name="typeBeer">
             <option>Эль</option>
             <option>Смешанное</option>
             <option>Лагер</option>
         </select><br>
-        <label>Percentage of alcohol</label><br>
+        <label>Процент алкоголя</label><br>
         <input type="number" step="any" min="0.1" max="30" name="percentageOfAlcoholBeer"><br>
-        <label>Bitterness</label><br>
+        <label>Геречь</label><br>
         <input type="number" name="bitternessOfBeer"><br>
-        <label>Quantity</label><br>
+        <label>Количество</label><br>
         <input type="number" name="quantityOfBeer"><br>
         <input type="submit" name="command" value="insert_beer_in_db" class="btn btn-success">
         <input type="submit" name="command" value="view_products_command" class="btn btn-success">

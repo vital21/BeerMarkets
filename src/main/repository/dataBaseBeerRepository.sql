@@ -19,6 +19,6 @@ CREATE TABLE beer (
 
 )
     ENGINE = innoDB;
-INSERT INTO beer VALUES (1,'Корона','бутылка',0.5,'светлое',4.6,120,400);
-INSERT INTO beer VALUES (2,'2Корона','2бутылка',0.5,'3светлое',4.6,120,400);
-INSERT INTO beer VALUES (3,'3Корона','3бутылка',0.5,'2светлое',4.6,120,400);
+INSERT INTO beer VALUES (1,'Andechser Vollbier Hell','бутылка',0.5,'эль',4.8,20,400);
+INSERT INTO beer VALUES (2,'Andechser Spezial Hell ','бутылка',0.5,'эль',5.8,30,400);
+INSERT INTO beer VALUES (3,'Andechser Bergbock Hell','бутылка',0.5,'эль',7.0,45,400);

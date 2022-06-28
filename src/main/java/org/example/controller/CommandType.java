@@ -19,7 +19,11 @@ public enum CommandType {
     BUY_PRODUCT_CART(new BuyProductCart()),
     USER_MENU_PAGE(new UserMenuPage()),
     CLEAR_CART(new ClearCart()),
-    SHOP_HISTORY(new ShopHistory());
+    SHOP_HISTORY(new ShopHistory()),
+    SHOP_HISTORY_ALL(new ShopHistoryAll()),
+    ADMIN_MENU_PAGE(new AdminMenuPage()),
+    LOGOUT(new LogoutCommand());
+
     private final CustomCommand command;
     CommandType(CustomCommand command) {
         this.command=command;

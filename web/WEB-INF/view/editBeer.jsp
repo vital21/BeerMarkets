@@ -14,13 +14,12 @@
 <body>
 <form method="post" action="Servlet">
     <input type="hidden" value="${product.id}" name="productId">
-    <label>new volume container</label><br>
+    <label>Новый обьем емкости</label><br>
     <input type="number" step="any" name="volumeContainerBeer"><br>
-    <label>new quantity</label><br>
+    <label>Количество</label><br>
     <input type="number" name="quantityOfBeer"><br>
     <input type="submit" name="command" value="edit_beer" class="btn btn-success">
     <input type="submit" name="command" value="view_products_command" class="btn btn-success">
 </form>
-
 </body>
 </html>
