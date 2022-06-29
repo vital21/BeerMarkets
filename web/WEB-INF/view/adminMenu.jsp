@@ -14,7 +14,7 @@
 </head>
 <body>
 <h1>Hello admin</h1>
-<form method="get" action="Servlet">
+<form method="post" action="Servlet">
     <input type="submit" name="command" value="insert_page_beer" class="btn btn-success">
     <input type="submit" name="command" value="view_products_command" class="btn btn-success">
     <input type="submit" name="command" value="shop_history_all" class="btn btn-success">

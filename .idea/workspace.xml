@@ -10,33 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7ccd879-5b90-4261-95f0-1949c6a5a7fc" name="Changes" comment="Update project:">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/AdminMenuPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/LogoutCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/ShopHistoryAll.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/UserMenuPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/view/shopHistoryAll.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8e240aef-cc23-4672-bcb8-47cb6861e311.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8e240aef-cc23-4672-bcb8-47cb6861e311.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DataBase/UserBuyDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DataBase/UserBuyDataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DataBase/UserBuyDb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DataBase/UserBuyDb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DataBase/UserDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DataBase/UserDataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DataBase/UserDb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/DataBase/UserDb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/CommandType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/CommandType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/PagePath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/PagePath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/command/AddBeerToBuy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/AddBeerToBuy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/command/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/LoginCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/command/RegistrationCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/RegistrationCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/command/RegistrationUserCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/RegistrationUserCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/command/ShopHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/command/ShopHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/repository/dataBaseBeerRepository.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/repository/dataBaseBeerRepository.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/repository/dataBaseUsersRepository.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/repository/dataBaseUsersRepository.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/ShopHistory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/shopHistory.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BeerMarkets_war_exploded/WEB-INF/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BeerMarkets_war_exploded/WEB-INF/classes/org/example/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/input/DataBaseConnect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/input/RegistrationUsers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/BeerRepository.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/adminMenu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/adminMenu.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/beerCatalog.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/editBeer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/editBeer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/insertBeer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/insertBeer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/productCart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/productCart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/registration.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/shopHistory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/shopHistory.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/shopHistoryAll.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/shopHistoryAll.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/userMenu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/userMenu.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/viewBeer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/viewBeer.jsp" afterDir="false" />
     </list>
@@ -349,7 +334,8 @@
       <workItem from="1656234853695" duration="9543000" />
       <workItem from="1656329933132" duration="15559000" />
       <workItem from="1656401915669" duration="3033000" />
-      <workItem from="1656445414631" duration="2074000" />
+      <workItem from="1656445414631" duration="4266000" />
+      <workItem from="1656450393415" duration="198000" />
     </task>
     <task id="LOCAL-00001" summary="Update project:&#10;Добавление сервлета, реализация Front controller pattern &#10;Окна регестрации">
       <created>1655210218761</created>
@@ -386,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656240523972</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Update project:">
+      <created>1656448148847</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1656448148847</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,11 +406,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/controller/command/ShopHistory.java</url>
           <line>18</line>

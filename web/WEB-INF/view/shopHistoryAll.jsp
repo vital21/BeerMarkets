@@ -34,7 +34,7 @@
 
     </table>
     <table>
-        <form method="get" action="Servlet">
+        <form method="post" action="Servlet">
             <td><input type="submit" name="command" value="admin_menu_page" class="btn btn-success"></td>
         </form>
     </table>

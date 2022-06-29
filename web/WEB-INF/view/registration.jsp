@@ -15,7 +15,7 @@
 <body>
 <div class="form">
   <h1>input</h1><br>
-  <form method="get" action="Servlet">
+  <form method="post" action="Servlet">
     <input type="text" required placeholder="login" name="login"><br>
     <input type="email" required placeholder="email" name="email"><br>
     <input type="password" required placeholder="password" name="password"><br><br>

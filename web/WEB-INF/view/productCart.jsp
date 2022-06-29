@@ -29,16 +29,13 @@
         <td STYLE="width: 20%">${buyProduct.quantity}</td>
         </c:forEach>
         </tr>
-                    <form method="get" action="Servlet">
-                        <input type="hidden" name="productId" value="${product.id}">
-                    </form>
         </c:forEach>
 
 
 
     </table>
     <table>
-        <form method="get" action="Servlet">
+        <form method="post" action="Servlet">
             <td><input type="submit" name="command" value="buy_product_cart" class="btn btn-success"></td>
             <td><input type="submit" name="command" value="clear_cart" class="btn btn-success"></td>
             <td><input type="submit" name="command" value="user_catalog_beer" class="btn btn-success"></td>
